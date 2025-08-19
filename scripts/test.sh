@@ -7,7 +7,7 @@ echo -e"\t\tTesting main.py"
 python3 src/main.py
 
 if [ $? -eq 0 ]; then
-	read "App test run complete; Build an apk?(Y/n)" choice
+	read -p "App test run complete; Build an apk?(Y/n)" choice
 
 	if [ $choice == "n" ]; then
 		echo "The app code wasn't approved; ... terminating..."
